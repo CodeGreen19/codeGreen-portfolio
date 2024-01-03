@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad&family=Lobster+Two&family=Philosopher&family=Quicksand&family=Roboto+Mono&family=Sofia&display=swap");
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  cursor: url("./assets/svg/cursor.svg"), auto !important;
+  background-color: #292929;
+  font-family: "Roboto Mono", Courier, monospace;
+}
+/* for nav option  */
+
+.nav_option_box > li {
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.8s;
+  position: relative;
+  background-color: rgb(25, 25, 25);
+  padding: 12px;
+  cursor: pointer;
+}
+
+.nav_option_box > li > li {
+  transition: all 0.3s;
+}
+.nav_option_box > li > li:hover {
+  transform: translateX(5px);
+}
+.nav_option_box > li::before {
+  content: "";
+  position: absolute;
+  background-color: #383838;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+}
+
+.nav_option_box.add > li {
+  transition: all 0.8s;
+  width: 100%;
+}
+.nav_option_box.remove > li {
+  transition: all 0.3s 0.5s;
+  padding: 0;
+  width: 0%;
+}
+.nav_option_box.add > li::before {
+  transition: all 0.5s 0.5s;
+  width: 0%;
+}
+/* for hero effect  */
+.effect_text {
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.5s 0.5s;
+  position: relative;
+}
+.effect_text::before {
+  content: "";
+  position: absolute;
+  background-color: #383838;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+}
+.nav_effect.add .effect_text,
+.hero_effect.add .effect_text {
+  width: 100%;
+}
+.nav_effect.add .effect_text::before,
+.hero_effect.add .effect_text::before {
+  width: 0px;
+  transition: all 0.5s 1s;
+}
+.hero_effect.add .effect_text::before {
+  width: 0px;
+  transition: all 0.9s 1s;
+}
+/* for navigation */
+.logo_text {
+  text-shadow: 2px 2px 3px black;
+}
+
+/* for hero section  */
+
+.profile_img {
+  transform: translateX(-50px);
+  transition: all 0.5s;
+}
+.hero_effect.add .profile_img {
+  transform: translateX(0px);
+  transition: all 0.5s;
+}
+/* hero button effect  */
+.hero_btn_box button:nth-child(1),
+.hero_btn_box button:nth-child(2) {
+  position: relative;
+  z-index: 5;
+}
+.hero_btn_box button:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s;
+  background: rgb(20, 20, 20);
+  z-index: -1;
+}
+.hero_btn_box button:nth-child(1):hover::before {
+  width: 0%;
+}
+.hero_btn_box button:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  transition: all 0.5s;
+  background: rgb(20, 20, 20);
+  z-index: -1;
+}
+.hero_btn_box button:nth-child(2):hover::before {
+  width: 100%;
+}
+
+.hero_overlay_box {
+  padding: 0px;
+}
+.hero_effect.add .hero_overlay_box {
+  padding: 20px;
+}
+/* for skill section  */
+.skill_main_box > div {
+  transform: translateX(50px);
+  opacity: 0;
+  transition: all 0.8s;
+}
+.skill_effect.add .skill_main_box > div {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/* for projects section  */
+.projects_box > div {
+  transform: scale(0.6);
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.projects_box > div:nth-child(2) {
+  transition: all 0.5s 0.2s;
+}
+.projects_box > div:nth-child(3) {
+  transition: all 0.5s 0.4s;
+}
+.projects_box > div:nth-child(4) {
+  transition: all 0.5s 0.6s;
+}
+.project_effect.add .projects_box > div {
+  transform: scale(1);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* for contact form  */
+.contact_form div input,
+.contact_form div textarea {
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  resize: none;
+  /* background-color: #262626; */
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
+.contact_form div {
+  position: relative;
+}
+
+.contact_form div::before {
+  content: "";
+  position: absolute;
+  background: rgb(33, 33, 33);
+  top: 0;
+  height: 100%;
+  width: 0%;
+  z-index: 1;
+  transition: all 0.8s;
+}
+.contact_form div:nth-child(1):before {
+  left: 0;
+}
+.contact_form div:nth-child(2):before {
+  right: 0;
+}
+.contact_form div:nth-child(3):before {
+  height: 0%;
+  width: 100%;
+}
+
+.contact_effect.add .contact_form div::before {
+  width: 100%;
+}
+.contact_effect.add .contact_form div:nth-child(3):before {
+  height: 100%;
+}
+
+.contact_form input::placeholder,
+.contact_form textarea::placeholder {
+  color: white;
+}
+
+.contact_ul {
+  transform: translateX(100%);
+  transition: all 0.7s 0.7s;
+}
+.contact_effect.add .contact_ul {
+  transform: translateX(0);
+}
+
+/* for contact button  */
+.contact_btn_box button {
+  position: relative;
+  z-index: 5;
+}
+.contact_btn_box button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  transition: all 0.5s;
+  background: rgb(32, 32, 32);
+  z-index: -1;
+}
+
+.contact_btn_box button:hover::before {
+  width: 100%;
+}
+
+/* for footer  */
+.footer_location svg {
+  font-size: 1rem;
+}
