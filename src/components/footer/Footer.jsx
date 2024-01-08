@@ -10,7 +10,7 @@ function Footer() {
     <div className="main_footer z-20  flex h-[19vh] w-full flex-col items-end justify-end bg-transparent py-3 text-white md:mb-0">
       <ul className="social_icons bb_1 flex w-full items-center justify-end gap-3 pb-5 pr-[6px] sm:gap-5  md:pr-0 ">
         <li>
-          <a href="https://www.youtube.com/@TheEarnWayAcademy">
+          <a href="https://github.com/CodeGreen19">
             <img src={github} className="w-[22px] md:w-[29px]" alt="youtube" />
           </a>
         </li>
@@ -34,7 +34,7 @@ function Footer() {
           </a>
         </li>
         <li>
-          <a href="https://web.facebook.com/the.earn.way?mibextid=ZbWKwL&_rdc=1&_rdr">
+          <a href="https://www.linkedin.com/in/code-green-25a2872a8/">
             <img
               src={linkedin}
               className="w-[21px] md:w-[26px]"

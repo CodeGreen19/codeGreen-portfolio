@@ -56,7 +56,7 @@ function Navbar({ scrollTo }) {
       </ul>
       <span
         onClick={() => handleClick(scrollTo.navRef)}
-        className="fixed bottom-[30px] right-[7%] z-50 cursor-pointer"
+        className="fixed bottom-[30px] right-1 z-50 cursor-pointer md:right-[7%]"
       >
         <KeyboardDoubleArrowUpRoundedIcon sx={{ fontSize: "2rem" }} />
       </span>

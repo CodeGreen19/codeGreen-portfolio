@@ -228,11 +228,11 @@ body {
 }
 
 /* for contact button  */
-.contact_btn_box button {
+.hover_effect_btn {
   position: relative;
   z-index: 5;
 }
-.contact_btn_box button::before {
+.hover_effect_btn::before {
   content: "";
   position: absolute;
   left: 0;
@@ -240,11 +240,11 @@ body {
   height: 100%;
   width: 0%;
   transition: all 0.5s;
-  background: rgb(32, 32, 32);
+  background: rgb(27, 27, 27);
   z-index: -1;
 }
 
-.contact_btn_box button:hover::before {
+.hover_effect_btn:hover::before {
   width: 100%;
 }
 

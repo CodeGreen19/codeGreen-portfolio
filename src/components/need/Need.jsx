@@ -1,11 +1,13 @@
 import social_img from "../../assets/projectImg/social_media.png";
+import yt_clone from "../../assets/projectImg/youtube_clone2.png";
+import ecommerce from "../../assets/projectImg/ecommerce2.png";
 
 export const projectsArr = [
   {
-    name: "Social Media app",
+    name: "Youtube Clone",
     live_url: "https://share-space-q3c1.onrender.com",
     github_url: "https://github.com/CodeGreen19/social-media-app",
-    img_url: social_img,
+    img_url: yt_clone,
   },
   {
     name: "Social Media app",
@@ -14,16 +16,10 @@ export const projectsArr = [
     img_url: social_img,
   },
   {
-    name: "Social Media app",
+    name: "Ecommerce app",
     live_url: "https://share-space-q3c1.onrender.com",
     github_url: "https://github.com/CodeGreen19/social-media-app",
-    img_url: social_img,
-  },
-  {
-    name: "Social Media app",
-    live_url: "https://share-space-q3c1.onrender.com",
-    github_url: "https://github.com/CodeGreen19/social-media-app",
-    img_url: social_img,
+    img_url: ecommerce,
   },
 ];
 

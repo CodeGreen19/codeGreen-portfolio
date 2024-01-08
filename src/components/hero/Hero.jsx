@@ -1,9 +1,15 @@
 import React from "react";
-import myself from "../../assets/img/hoddie-man2.png";
-// import myself from "../../assets/img/me.png";
+// import myself from "../../assets/img/hoddie-man2.png";
+import myself from "../../assets/img/shobuj.png";
 import CodeSlide from "./CodeSlide";
 
 function Hero() {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/adobe.pdf"; // Path to the CV file in the public folder
+    link.download = "MyCV.pdf"; // Desired filename for the downloaded file
+    link.click();
+  };
   return (
     <div className="hero_container flex min-h-[95vh] flex-col-reverse items-center justify-start py-6 md:flex-row md:items-start md:justify-between">
       <div className="w-full p-2  md:w-[60%] md:p-0">
@@ -30,7 +36,9 @@ function Hero() {
           <CodeSlide />
         </div>
         <div className="hero_btn_box my-5">
-          <button className="b_1 mr-1 p-2 px-3">Download CV</button>
+          <button className="b_1 mr-1 p-2 px-3" onClick={handleDownload}>
+            Download CV
+          </button>
           <button className="b_1 p-2 px-3">Hire Me</button>
         </div>
       </div>
