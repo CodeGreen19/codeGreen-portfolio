@@ -15,7 +15,7 @@ Welcome to my personal portfolio website! This website serves as a showcase of m
 ## Technologies Used
 
 - **HTML5:** Structure and markup of the website.
-- **CSS3:** Styling and layout using advanced CSS techniques.
+- **Tailwind CSS:** Styling and layout using advanced CSS techniques.
 - **React:** A JavaScript Library .
 
 
