@@ -14,8 +14,8 @@ function Navbar({ scrollTo }) {
     <div className="nav_container flex w-full items-center justify-between py-3 pr-2 md:py-3 md:pr-0">
       <div className=" w-[155px] p-1 md:w-[200px]">
         <h1 className="effect_text md:ls_3 logo_text font-sofia text-[1.9rem] font-[600] text-[#ffffff] md:text-[2.3rem] md:font-[500]">
-          Code<span className="text-[red]">G</span>reen
-          <span className="ml-1 text-[red]">.</span>
+          Code<span className="text-[#37b0d8]">G</span>reen
+          <span className="ml-1 text-[#33adc8]">.</span>
         </h1>
       </div>
       <ul

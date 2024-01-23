@@ -44,8 +44,14 @@ function Hero() {
       </div>
       <div className=" b_1 w-full md:w-[40%]">
         <div className="pofile_img_box relative w-full bg-[#202020]">
-          <img src={myself} alt="hoddie_man" className="profile_img w-full " />
-          <div className="b_1 absolute left-[10%] right-[10%] top-[70%]  md:left-[-50px] md:right-[40%]">
+          <div className=" profile_img_sub_box p-[50px] md:p-[70px]">
+            <img
+              src={myself}
+              alt="hoddie_man"
+              className="profile_img b_1 w-full "
+            />
+          </div>
+          <div className="b_1 absolute left-[5%] right-[5%] top-[70%]  md:left-[-50px] md:right-[40%]">
             <ul className="effect_text hero_overlay_box flex h-[100px] flex-col items-start justify-evenly bg-[#181818]  text-[0.8rem]  md:text-[1rem]">
               <li>full-stack developer</li>
               <li>

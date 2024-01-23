@@ -7,14 +7,14 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 function Footer() {
   return (
-    <div className="main_footer z-20  flex h-[19vh] w-full flex-col items-end justify-end bg-transparent py-3 text-white md:mb-0">
+    <div className="main_footer z-20 flex h-[19vh] w-full flex-col items-end justify-end bg-transparent p-1 py-3 text-white md:mb-0">
       <ul className="social_icons bb_1 flex w-full items-center justify-end gap-3 pb-5 pr-[6px] sm:gap-5  md:pr-0 ">
         <li>
-          <a href="https://github.com/CodeGreen19">
+          <a href="https://github.com/CodeGreen19" target="_blank">
             <img src={github} className="w-[22px] md:w-[29px]" alt="youtube" />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="https://www.instagram.com/hmnajmul24?igshid=YTQwZjQ0NmI0OA%3D%3D">
             <img
               src={instagram}
@@ -22,19 +22,22 @@ function Footer() {
               alt="instagram"
             />
           </a>
-        </li>
+        </li> */}
 
-        <li>
-          <a href="https://web.facebook.com/the.earn.way?mibextid=ZbWKwL&_rdc=1&_rdr">
+        {/* <li>
+          <a href="https://twitter.com/AhmedDev19s">
             <img
               src={twitter}
               className=" w-[21px] md:w-[33px]"
-              alt="facebook"
+              alt="twitter"
             />
           </a>
-        </li>
+        </li> */}
         <li>
-          <a href="https://www.linkedin.com/in/code-green-25a2872a8/">
+          <a
+            href="https://www.linkedin.com/in/ahmed-dev-32a9252ab/"
+            target="_blank"
+          >
             <img
               src={linkedin}
               className="w-[21px] md:w-[26px]"

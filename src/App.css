@@ -91,11 +91,26 @@ body {
 .profile_img {
   transform: translateX(-50px);
   transition: all 0.5s;
+  filter: drop-shadow(1px 1px 1px rgb(15, 15, 15));
+  position: relative;
+  background: #111111;
 }
 .hero_effect.add .profile_img {
   transform: translateX(0px);
   transition: all 0.5s;
 }
+/* .profile_img_sub_box::before {
+  position: absolute;
+  right: 70px;
+  top: 70px;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #00acbc;
+  z-index: 30;
+} */
+
 /* hero button effect  */
 .hero_btn_box button:nth-child(1),
 .hero_btn_box button:nth-child(2) {

@@ -5,20 +5,20 @@ import ecommerce from "../../assets/projectImg/ecommerce2.png";
 export const projectsArr = [
   {
     name: "Youtube Clone",
-    live_url: "https://share-space-q3c1.onrender.com",
-    github_url: "https://github.com/CodeGreen19/social-media-app",
+    live_url: "https://codegreen-youtube.onrender.com",
+    github_url: "https://github.com/CodeGreen19/youtube-clone",
     img_url: yt_clone,
   },
   {
-    name: "Social Media app",
+    name: "Social Media App",
     live_url: "https://share-space-q3c1.onrender.com",
     github_url: "https://github.com/CodeGreen19/social-media-app",
     img_url: social_img,
   },
   {
-    name: "Ecommerce app",
-    live_url: "https://share-space-q3c1.onrender.com",
-    github_url: "https://github.com/CodeGreen19/social-media-app",
+    name: "Ecommerce Web App",
+    live_url: "https://shoe-safar-ecommerce.onrender.com",
+    github_url: "https://github.com/CodeGreen19/ecommerce-web",
     img_url: ecommerce,
   },
 ];
