@@ -19,6 +19,7 @@ function Projects() {
                 <a
                   href={item.github_url}
                   className="text-[0.8rem] md:text-[1rem] "
+                  target="_blank"
                 >
                   github
                 </a>
@@ -27,6 +28,7 @@ function Projects() {
                 <a
                   href={item.live_url}
                   className="text-[0.8rem] md:text-[1rem]"
+                  target="_blank"
                 >
                   live demo
                 </a>

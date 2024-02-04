@@ -24,7 +24,7 @@ function Footer() {
           </a>
         </li> */}
 
-        {/* <li>
+        <li>
           <a href="https://twitter.com/AhmedDev19s">
             <img
               src={twitter}
@@ -32,7 +32,7 @@ function Footer() {
               alt="twitter"
             />
           </a>
-        </li> */}
+        </li>
         <li>
           <a
             href="https://www.linkedin.com/in/ahmed-dev-32a9252ab/"
